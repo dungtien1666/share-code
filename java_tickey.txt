@@ -1,0 +1,23 @@
+https://cdnjs.com/libraries/jquery.sticky
+https://code.jquery.com/jquery-2.0.3.js
+<script>
+function latido(){
+$( ".BuyButton" ).effect( "shake",800 );
+}
+$( window ).load(function() {
+/* Scroller */
+var ScrollHeight = ($("#rightContent").height() + $("#rightContent").position().top) - $('#StickyBox').height()+350;
+$(window).scroll(function () {
+var alturaActual = $(this).scrollTop();
+if((ScrollHeight) <= alturaActual){
+if(alturaActual >= ($("#footer").position().top - $('#StickyBox').height()) ){
+$('#StickyBox').removeClass('fixed');
+}else{
+$('#StickyBox').addClass('fixed').fadeIn("slow");
+}
+}else{
+$('#StickyBox').removeClass('fixed');
+}
+});
+});
+</script>
