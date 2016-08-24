@@ -1,0 +1,8 @@
+<script>
+function getURLParameter(e){return decodeURI((RegExp(e+'='+'(.+?)(&|$)').exec(location.search)||[,null])[1]||'')};
+cre=(getURLParameter('cre').split('+').join(' '));
+if(cre.toLowerCase().indexOf("undefined")>=0 || cre == '' || cre.toLowerCase().indexOf("unknown")>=0) {product1="Revolyn"; img1="<img src=https://peoplemag.press/promotion/images/product1.png>";}
+if(cre.toLowerCase().indexOf("undefined")>=0 || cre == '' || cre.toLowerCase().indexOf("unknown")>=0) {product2="Pure Cleanse"; img2="<img src=https://peoplemag.press/promotion/images/product2.png>";}
+if(cre.toLowerCase().indexOf("1")>=0) {product1="Pure Cambogia Ultra"; img1="<img src=https://peoplemag.press/promotion/images/product4.png>";}
+if(cre.toLowerCase().indexOf("1")>=0) {product2="Pure Life Cleanse"; img2="<img src=https://peoplemag.press/promotion/images/product3.png>";}
+</script>
